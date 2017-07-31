@@ -1,7 +1,7 @@
 ### this 指向问题
 
 1.
-```
+```javascript
 function a() {
     var user = '追梦子';
     console.log(this.user);  //undefined
@@ -12,7 +12,7 @@ a();
 
 
 2
-```
+```javascript
 function a () {
     var user = '追梦子';
     console.log(this.user);  //undefined
@@ -23,7 +23,7 @@ window.a();
 
 
 3
-```
+```javascript
 var o = {
     user: '追梦子',
     fn: function () {
@@ -36,7 +36,7 @@ o.fn();
 
 
 4
-```
+```javascript
 var o = {
     user: '追梦子',
     fn: function () {
@@ -49,7 +49,7 @@ window.o.fn();
 
 
 5
-```
+```javascript
 var o = {
     a: 10,
     b: {
@@ -82,7 +82,7 @@ this指向的也只是它上一级的对象
 
 
 6
-```
+```javascript
 var o = {
     a: 10,
     b: {
@@ -100,7 +100,7 @@ o.b.fn();
 7  特例
 this永远指向的是最后调用它的对象，
 也就是看它执行的时候是谁调用的
-```
+```javascript
 var o = {
     a: 10,
     b: {
@@ -120,8 +120,7 @@ j();
 > 这里用变量a创建了一个Fn的实例（相当于复制了一份Fn到对象a里面）
 此时仅仅只是创建，并没有执行，而调用这个函数Fn的是对象a，
 那么this指向的自然是对象a
-
-```
+```javascript
 function Fn() {
     this.user = '追梦子';
     console.log(this);  // 追梦子
@@ -132,7 +131,7 @@ console.log(a); // Fn
 ```
 
 9
-```
+```javascript
 function fn () {
     this.user = '追梦子';
     return {};  // return 一个空对象
@@ -143,7 +142,7 @@ console.log(a.user); //undefined
 
 
 10
-```
+```javascript
 function fn () {
     this.user = '追梦子';
     return function () {}; // return 一个函数
@@ -154,7 +153,7 @@ console.log(a.user); //undefined
 
 
 11
-```
+```javascript
 function fn () {
     this.user = '追梦子';
     return 1;   // ruturn 一个数
@@ -167,7 +166,7 @@ console.log(a.user); // 追梦子
 12
 > 如果返回值是一个对象，那么this指向的就是那个返回的对象，
 如果返回值不是一个对象那么this还是指向函数的实例。
-```
+```javascript
 function fn() {
     this.user = '追梦子';
     return undefined;
@@ -180,7 +179,7 @@ console.log(a); //fn {user: '追梦子'}
 
 13 特例
 > return null
-```
+```javascript
 function fn () {
     this.user = '追梦子';
     return null;
