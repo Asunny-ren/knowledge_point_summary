@@ -1,5 +1,6 @@
 ### this 指向问题
 [微信收藏](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552403&idx=1&sn=9f3ebb90573742a9506875ab6b2c2a5b&chksm=8025ad52b7522444b61cbb18ac593fc1b523e1bd383d10614e3ab9a6ee5e02ef3a2a745175f6&scene=0&key=cf0fa2bf8e1a08acddf806280dc4c2d91f38725fc6d6f7183a29d35633f58db07da6ff35b0f44e823a7e47706f05e74b8c7e039fec9f781b4022c9a60d87e66fa746bfd17da94a6b11f8bcac60942cd5&ascene=0&uin=MTc1MTY2NDg2MQ%3D%3D&devicetype=iMac+MacBookPro13%2C2+OSX+OSX+10.12.5+build(16F73)&version=12020810&nettype=WIFI&fontScale=100&pass_ticket=ReTDcqRl%2BHxWX%2ByvtUlqiBXKCKX%2B8lS0nDTRpSWS0vm0DaAJhCmwldF19J%2B%2BR3DC)
+
 1.
 ```javascript
 function a() {
